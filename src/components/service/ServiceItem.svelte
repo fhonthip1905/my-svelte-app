@@ -1,16 +1,16 @@
 <script>
-  export let imgUrl, title;
+  export let imgUrl, title, link;
 </script>
-
-<div class="card-item">
+<a href={link} class="card-item">
   <img class="card-img" src={imgUrl} alt="" />
   <div class="card-title">{title}</div>
-</div>
+</a>
 
 <style>
   .card-item {
     position: relative;
     height: fit-content;
+    cursor: pointer;
     img.card-img {
       width: 340px;
       height: 280px;

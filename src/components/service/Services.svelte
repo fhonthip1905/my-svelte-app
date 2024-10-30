@@ -3,9 +3,9 @@
 
   //    mock data service
   let dataservices = [
-    { imgUrl: "../public/images/security.jpg", title: "CYBER SECURITY" },
-    { imgUrl: "../public/images/handCom.jpg", title: "CYBER SECURITY" },
-    { imgUrl: "../public/images/typing.jpg", title: "CYBER SECURITY" },
+    { imgUrl: "../public/images/security.jpg", title: "CYBER SECURITY", link:"#cs" },
+    { imgUrl: "../public/images/handCom.jpg", title: "CYBER SECURITY", link:"#cs" },
+    { imgUrl: "../public/images/typing.jpg", title: "CYBER SECURITY", link:"#cs" },
   ];
 </script>
 
@@ -14,7 +14,7 @@
     <div class="title">Our services</div>
     <div class="content">
       {#each dataservices as dataservice}
-        <ServiceItem imgUrl={dataservice.imgUrl} title={dataservice.title} />
+        <ServiceItem imgUrl={dataservice.imgUrl} title={dataservice.title} link={dataservice.link} />
       {/each}
     </div>
   </div>
