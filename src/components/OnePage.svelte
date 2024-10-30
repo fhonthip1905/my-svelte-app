@@ -22,6 +22,7 @@
     opacity: 1;
     background-repeat: no-repeat;
     visibility: inherit;
+    color: white;
   }
   .title {
     color: white;

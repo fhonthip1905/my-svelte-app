@@ -1,24 +1,3 @@
-<script>
-  import { onMount } from "svelte";
-
-  onMount(() => {
-    const navbar = document.querySelector(".navbar");
-
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
-</script>
 
 <nav class="navbar">
   <div class="navbar-logo">
@@ -26,7 +5,7 @@
       <div class="logo-img">
         <img src="../public/icons/logo-white.png" alt="" />
       </div>
-      <div class="logo-text">BBnT</div>
+      <div class="logo-text">FFnT</div>
     </a>
   </div>
   <div class="navbar-menu">
@@ -80,10 +59,11 @@
     align-items: center;
     color: white;
     padding: 0 40px;
-    background: transparent;
+    background-color:#011e54b9;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 999;
     .navbar-logo {
       display: flex;
       justify-content: center;
@@ -110,7 +90,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      /* border: 1px dashed red; */
       width: auto;
       height: 80px;
       margin: 0 auto;
