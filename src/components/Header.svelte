@@ -57,11 +57,12 @@
   nav.navbar {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     padding: 0 40px;
     background-color:#011e54b9;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 80px);
     top: 0;
     z-index: 999;
     .navbar-logo {
@@ -90,9 +91,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: auto;
+      width: calc(100% - 80px);
       height: 80px;
-      margin: 0 auto;
+      padding-right: 40px;
 
       ul.menu-list {
         display: flex;

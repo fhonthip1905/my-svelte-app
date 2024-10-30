@@ -2,6 +2,7 @@
   font-family:  "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
 }
 
 body {
@@ -10,5 +11,6 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: palegoldenrod; */
+  background-color: #f3f5f7;
+  color: #2f2f2f;
 }
