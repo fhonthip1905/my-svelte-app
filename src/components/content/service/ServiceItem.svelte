@@ -1,6 +1,7 @@
 <script>
   export let imgUrl, title, link;
 </script>
+
 <a href={link} class="card-item">
   <img class="card-img" src={imgUrl} alt="" />
   <div class="card-title">{title}</div>

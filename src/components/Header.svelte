@@ -1,4 +1,3 @@
-
 <nav class="navbar">
   <div class="navbar-logo">
     <a href="#home">
@@ -8,6 +7,7 @@
       <div class="logo-text">FFnT</div>
     </a>
   </div>
+
   <div class="navbar-menu">
     <ul class="menu-list">
       <li class="current-page">
@@ -51,67 +51,98 @@
       </li>
     </ul>
   </div>
+
+  <div class="menu-icon">
+    <button>
+      <img src="../public/icons/burger-menu.png" alt="icon-menu" />
+    </button>
+  </div>
 </nav>
 
 <style>
   nav.navbar {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    color: white;
     padding: 0 40px;
-    background-color:#011e54b9;
+    border: 1px dashed red;
+    background: transparent;
     position: fixed;
-    width: calc(100% - 80px);
-    top: 0;
     z-index: 999;
-    .navbar-logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      height: 80px;
-      a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-      }
-      .logo-img img {
-        width: 36px;
-        height: 36px;
-        padding: 4px;
-      }
-      .logo-text {
-        color: white;
-        font-size: 42px;
-        font-weight: 700;
-      }
-    }
-    .navbar-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: calc(100% - 80px);
-      height: 80px;
-      padding-right: 40px;
+    width: 100%;
+  }
+  .navbar-logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px dashed red;
+    column-gap: 10px;
+  }
+  .navbar-logo img {
+    height: 36px;
+    width: 36px;
+  }
+  .logo-text {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+  }
 
-      ul.menu-list {
-        display: flex;
-        li {
-          padding: 0 20px;
-          list-style-type: none;
-        }
-        a {
-          color: white;
-          font-size: 12px;
-          font-family: "Montserrat", sans-serif;
-          text-decoration: none;
-          letter-spacing: 2px;
-          font-weight: 700;
-        }
-        a:hover {
-          color: #70aed2;
-        }
+  ul.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    visibility: visible;
+  }
+  ul a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+  }
+  a:hover {
+    color: #70aed2;
+  }
+
+  button {
+    visibility: hidden;
+    background: transparent;
+    border: none;
+    img {
+      height: 36px;
+      width: 36px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    nav.navbar {
+      height: 68px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar-logo img {
+      padding: 10px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+    }
+    .logo-text {
+      display: none;
+    }
+    ul.menu-list {
+      display: none;
+    }
+    button {
+      visibility: visible;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      img {
+        padding: 10px;
       }
     }
   }
