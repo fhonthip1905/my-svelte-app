@@ -59,6 +59,15 @@
     }
   }
 
+  @media only screen and (max-width: 1024px){
+    .container-inner {
+    .content {
+      display: grid;
+      grid-template-columns: 340px 340px;
+    }
+  }
+  }
+
   @media only screen and (max-width: 700px){
     .container-inner {
     .content {

@@ -6,17 +6,24 @@
   import Automation from "./components/content/Automation.svelte";
   import Turnkey from "./components/content/turnkey/Turnkey.svelte";
   import About from "./components/content/about/About.svelte";
+  import CountClick from "./components/function/countClick.svelte";
+  // import Navbar from "./components/Navbar.svelte";
 </script>
 
 <div class="homepage">
+  <!-- <Navbar /> -->
   <Header />
   <OnePage />
 </div>
 <Services />
 <Cybersecurity />
-<Automation/>
-<Turnkey/>
+<Automation />
+<Turnkey />
 <About />
+
+<!-- try with function -->
+<CountClick />
+
 <style>
   .homepage {
     height: 100vh;

@@ -1,9 +1,9 @@
 <script>
-  import ContentItem from "../ContentItem.svelte";
   import { AboutMockData } from "../ContentMockData";
 </script>
 
-<div class="container-content">
+<section id="about">
+  <div class="container-content">
     <div class="content-title">{AboutMockData.title}</div>
     <div class="content-detail">
       <div class="detail-text">
@@ -13,10 +13,10 @@
       </div>
     </div>
   </div>
-
+</section>
 
 <style>
-.container-content {
+  .container-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,19 +30,34 @@
     margin-bottom: 20px;
     color: #2f2f2f;
   }
-  .content-detail{
-    width: 1100px;
+  .content-detail {
+    width: auto;
+    padding: 0 40px;
   }
+
+  .detail-text {
+    display: flex;
+    justify-content: center;
+  }
+
   .detail-text p {
+    width: 80%;
     margin: 0;
     color: #5b5b5b;
   }
 
-  @media only screen and (max-width: 700px) {
-    .content-detail{
-    width: 350px;
-    margin-bottom: 80px;
+  @media only screen and (max-width: 1024px) {
+    .detail-text p {
+      width: 80%;
+    }
   }
+
+  @media only screen and (max-width: 700px) {
+    .detail-text p {
+      width: 100%;
+    }
+    .content-detail {
+      margin-bottom: 80px;
+    }
   }
 </style>
-

@@ -46,13 +46,13 @@ export let TurnkeyMockData = [
     title: "Mobile Application Development",
     image: "./public/images/momo.png",
     detail:
-      "We have multi expert engineers provide app development services to individuals, startups, high-tech companies, digital agencies and enterprise clients.Our mobile team can join your project at any step from ideation to ongoing development and support. Either you need end-to-end mobile app development services or team augmentation you can expect a solid workflow with 100% transparency for all costs and effortsOur user-centered design approach and experience in mobile app development enables us to create groundbreaking user engagement native, cross-platform and hybrid apps that get featured in the Google Play and App Store",
+      "We have multi expert engineers provide app development services to individuals, startups, high-tech companies, digital agencies and enterprise clients.Our mobile team can join your project at any step from ideation to ongoing development and support. Either you need end-to-end mobile app development services ",
   },
   {
     title: "Cloud Solution",
     image: "./public/images/cloud.png",
     detail:
-      "We offer cloud computing consulting services and cloud computing support to companies with our expert cloud computing consultants to ensure your company is getting the most out of your cloud solution. Our cloud services are fit for businesses that are eager to start deploying cloud to their systems, and also for existing cloud users that want to better utilize the cloud resources they already have Our cloud computing team is comprised of hand-picked consultants including project managers, implementers and analysts with years of experience in delivering the complex projects",
+      "We offer cloud computing consulting services and cloud computing support to companies with our expert cloud computing consultants to ensure your company is getting the most out of your cloud solution. Our cloud services are fit for businesses that are eager to start deploying cloud to their systems, and also for existing cloud users that want to better utilize the cloud ",
   },
 ];
 

@@ -1,3 +1,9 @@
+<script>
+  import Dropdown from "./dropdown.svelte";
+
+
+
+</script>
 <nav class="navbar">
   <div class="navbar-logo">
     <a href="#home">
@@ -56,6 +62,10 @@
     <button>
       <img src="../public/icons/burger-menu.png" alt="icon-menu" />
     </button>
+    <div id="active">
+      <Dropdown />
+    </div>
+ 
   </div>
 </nav>
 
@@ -65,7 +75,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 0 40px;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     background: transparent;
     position: fixed;
     z-index: 999;
@@ -77,7 +87,7 @@
     align-items: center;
     text-decoration: none;
     color: white;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     column-gap: 10px;
   }
   .navbar-logo img {
@@ -132,6 +142,7 @@
     .logo-text {
       display: none;
     }
+    
     ul.menu-list {
       display: none;
     }
@@ -146,4 +157,9 @@
       }
     }
   }
+  #active{
+    /* display: block; */
+    display: none;
+  }
+
 </style>
