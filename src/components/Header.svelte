@@ -1,9 +1,12 @@
 <script>
   import Dropdown from "./dropdown.svelte";
-
-
-
+  let isOpen = $state(false);
+  // function setIsOpen() {
+  //   isOpen = !isOpen;
+  // }
+  const setIsOpen = () => isOpen = !isOpen
 </script>
+
 <nav class="navbar">
   <div class="navbar-logo">
     <a href="#home">
@@ -59,13 +62,14 @@
   </div>
 
   <div class="menu-icon">
-    <button>
+    <button on:click={setIsOpen}>
       <img src="../public/icons/burger-menu.png" alt="icon-menu" />
     </button>
-    <div id="active">
+    <!-- <div id={`${isOpen ? "" : "active"}`}> -->
+    {#if isOpen}
       <Dropdown />
-    </div>
- 
+    {/if}
+    <!-- </div> -->
   </div>
 </nav>
 
@@ -142,7 +146,7 @@
     .logo-text {
       display: none;
     }
-    
+
     ul.menu-list {
       display: none;
     }
@@ -157,9 +161,8 @@
       }
     }
   }
-  #active{
+  #active {
     /* display: block; */
     display: none;
   }
-
 </style>
